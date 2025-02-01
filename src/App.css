@@ -1,0 +1,116 @@
+.App {
+  text-align: center;
+}
+
+.header {
+  background-color: #282c34;
+  color: white;
+  padding: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+.footer {
+  background-color: #282c34;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.download-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #61dafb;
+  color: #282c34;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.download-link:hover {
+  background-color: #4fa3c7;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.team-member {
+  text-align: center;
+}
+
+.member-image {
+  width: 100px;
+  height: 100px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+}
+
+.get-in-touch-button {
+  padding: 10px 20px;
+  background-color: #61dafb;
+  color: #282c34;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.get-in-touch-button:hover {
+  background-color: #4fa3c7;
+}
+
+
+.team-member {
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+}
+
+.popup {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.expanded-description {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.carousel img {
+  width: auto; /* Allow the width to adjust based on height */
+  height: 400px; /* Set a fixed height for the carousel */
+  object-fit: contain; /* Ensures the entire image is visible without cropping */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+.carousel .slide {
+  background-color: #f0f0f0; /* Light gray background */
+}
