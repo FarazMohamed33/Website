@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
+import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa"; // Import icons
 import Home from "./pages/Home";
 import Download from "./pages/Download";
 import Team from "./pages/Team";
@@ -82,6 +83,32 @@ function App() {
 
         <footer className="footer">
           <p>&copy; {new Date().getFullYear()} Watt. All rights reserved.</p>
+          <div className="social-icons">
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <FaInstagram className="icon" />
+            </a>
+            <a
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <FaGithub className="icon" />
+            </a>
+            <a
+              href="https://www.linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <FaLinkedin className="icon" />
+            </a>
+          </div>
         </footer>
       </div>
     </Router>
