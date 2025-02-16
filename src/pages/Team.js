@@ -33,6 +33,8 @@ const Team = () => {
   return (
     <div className="team-page">
       <h2>Meet the Team</h2>
+
+      {/* Search Bar */}
       <div className="controls">
         <input
           type="text"
@@ -42,6 +44,8 @@ const Team = () => {
           className="search-bar"
         />
       </div>
+
+      {/* Team Members Grid */}
       <div className="team-grid">
         {filteredMembers.map((member, index) => (
           <motion.div
@@ -80,6 +84,24 @@ const Team = () => {
             )}
           </motion.div>
         ))}
+      </div>
+
+      {/* Vision, Aim, and Mission Paragraphs */}
+      <div className="mission-section">
+        <h3>Our Vision</h3>
+        <p>
+          Our vision is to create a world where technology empowers everyone to achieve their full potential.
+        </p>
+
+        <h3>Our Aim</h3>
+        <p>
+          We aim to deliver innovative solutions that make a difference in people's lives.
+        </p>
+
+        <h3>Our Mission</h3>
+        <p>
+          Our mission is to inspire and transform the way people live and work through cutting-edge products.
+        </p>
       </div>
     </div>
   );

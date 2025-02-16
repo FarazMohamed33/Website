@@ -179,39 +179,6 @@
   font-size: 16px;
 }
 
-/* Icon Grid Styles */
-.icon-grid {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  margin-top: 40px;
-  padding: 20px;
-}
-
-.icon-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  cursor: pointer;
-  padding: 20px;
-  border: 2px solid #61dafb;
-  border-radius: 10px;
-  transition: background-color 0.3s ease;
-}
-
-.icon-card:hover {
-  background-color: #f0f0f0;
-}
-
-.description {
-  margin-top: 10px;
-  font-size: 16px;
-  color: #333;
-  max-width: 300px;
-  text-align: center;
-  overflow: hidden; /* Ensures the animation works smoothly */
-}
-
 /* Download Section */
 .download {
   text-align: center;
@@ -292,5 +259,29 @@
   font-size: 14px;
   color: #666;
   font-weight: bold;
+}
+
+/* Mission Section */
+.mission-section {
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 800px;
+  text-align: center;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mission-section h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #282c34;
+}
+
+.mission-section p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
 }
 
