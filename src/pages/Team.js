@@ -10,14 +10,14 @@ import dhruw from "../images/dhruw.jpg";
 import nibras from "../images/nibras.jpg";
 
 const teamMembers = [
-  { name: "Alex", description: "Cool bro who loves coding.", image: alex },
-  { name: "Vir", description: "Great bro, has nice Marvel shirt", image: vir },
-  { name: "Faraz", description: "Anime fan", image: faraz },
-  { name: "Ihsan", description: "Awesome bro", image: ihsan },
-  { name: "Tushita", description: "Very Cool bro", image: tushita },
-  { name: "Fidha", description: "Hard working bro", image: fidha },
-  { name: "Dhruw", description: "Valued bro", image: dhruw },
-  { name: "Nibras", description: "bro", image: nibras },
+  { name: "Alex", description: "UX/UI Leader", image: alex },
+  { name: "Vir", description: "UX/UI Designer", image: vir },
+  { name: "Faraz", description: "Marketing", image: faraz },
+  { name: "Ihsan", description: "Software Engineer", image: ihsan },
+  { name: "Tushita", description: "Product Manager", image: tushita },
+  { name: "Fidha", description: "Backend Developer", image: fidha },
+  { name: "Dhruv", description: "Marketing", image: dhruw },
+  { name: "Nibras", description: "UX/UI Designer", image: nibras },
 ];
 
 const Team = () => {

@@ -13,7 +13,7 @@ function App() {
     <Router>
       <div className="App">
         <header className="header">
-          <h1>Watt</h1>
+          <h1>Welcome to My Watt</h1>
           <nav>
             <Link to="/" className="nav-link">Home</Link>
             <Link to="/download" className="nav-link">Download</Link>
@@ -85,7 +85,7 @@ function App() {
           <p>&copy; {new Date().getFullYear()} Watt. All rights reserved.</p>
           <div className="social-icons">
             <a
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/mywatt_app/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"

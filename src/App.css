@@ -285,3 +285,79 @@
   margin-bottom: 20px;
 }
 
+/* Home Page Styles */
+.home {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Carousel Styles */
+.carousel .legend {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Feature Section Styles */
+.feature-section {
+  margin: 40px auto;
+  padding: 40px 20px;
+  max-width: 1000px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.feature-title {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #ffd700;
+  font-weight: bold;
+}
+
+.feature-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature-image {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.feature-caption {
+  font-size: 24px;
+  line-height: 1.6;
+  max-width: 800px;
+  color: #f0f0f0;
+  font-weight: 500;
+}
+
+/* Big Title: OUR PROJECTS */
+.projects-title {
+  font-size: 48px; /* Big font size */
+  margin: 40px 0; /* Add margin for spacing */
+  color: #282c34; /* Dark color for contrast */
+  font-weight: bold; /* Bold text */
+  text-transform: uppercase; /* Uppercase text */
+  letter-spacing: 2px; /* Add spacing between letters */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Why Choose Us Title */
+.home h2 {
+  font-size: 48px; /* Big font size */
+  margin: 40px 0; /* Add margin for spacing */
+  color: #282c34; /* Dark color for contrast */
+  font-weight: bold; /* Bold text */
+  text-transform: uppercase; /* Uppercase text */
+  letter-spacing: 2px; /* Add spacing between letters */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
