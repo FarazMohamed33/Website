@@ -7,19 +7,30 @@ import Download from "./pages/Download";
 import Team from "./pages/Team";
 import Contact from "./pages/Contact";
 import "./App.css";
+import websiteLogo from "./images/websitelogo.png"; // Import website logo
 
 function App() {
   return (
     <Router>
       <div className="App">
         <header className="header">
-          <h1>Welcome to My Watt</h1>
-          <nav>
-            <Link to="/" className="nav-link">Home</Link>
-            <Link to="/download" className="nav-link">Download</Link>
-            <Link to="/team" className="nav-link">Team</Link>
-            <Link to="/contact" className="nav-link">Contact</Link>
-          </nav>
+          <div className="header-content">
+            {/* Logo on the far left with Link to Homepage */}
+            <Link to="/" className="logo-link">
+              <img src={websiteLogo} alt="App Logo" className="logo" />
+            </Link>
+
+            {/* Title in the center */}
+            <div className="header-title">My Watt</div>
+
+            {/* Navigation tabs on the right */}
+            <nav className="nav-links">
+              <Link to="/" className="nav-link">Home</Link>
+              <Link to="/download" className="nav-link">Download</Link>
+              <Link to="/team" className="nav-link">Team</Link>
+              <Link to="/contact" className="nav-link">Contact</Link>
+            </nav>
+          </div>
         </header>
 
         <main className="main-content">

@@ -1,67 +1,80 @@
 import React from "react";
-import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import image1 from "../images/dragon_ball_z_battle_of_gods_screenshot3.jpg";
-import image2 from "../images/dragon-ball-z-dragonball-san-goku-wallpaper.jpg";
-import image3 from "../images/dragon-ball-son-goku-blue-power.jpg";
-import img1 from "../images/super saiyan 3.jpg"; // Add your feature images
-import img2 from "../images/super saiyan 3.jpg"; // Add your feature images
-import img3 from "../images/super saiyan 3.jpg"; // Add your new feature image
+import image1 from "../images/pic.png";
+import image2 from "../images/download.JPG";
+import img1 from "../images/1.png";
+import graphImg from "../images/2.png";
+import roomsImg from "../images/3.png";
+import reportsImg from "../images/4.png";
+import housesImg from "../images/5.png";
 
 const Home = () => {
   return (
     <div className="home">
-      <h2>Why choose us?</h2>
-
-      {/* Carousel Section */}
-      <Carousel autoPlay infiniteLoop showThumbs={false}>
-        <div>
-          <img src={image1} alt="Feature 1" />
-          <p className="legend">Our tech company is dedicated to staying at the forefront of the industry</p>
-        </div>
-        <div>
-          <img src={image2} alt="Feature 2" />
-          <p className="legend">We prioritize user experience in every application we create</p>
-        </div>
-        <div>
-          <img src={image3} alt="Feature 3" />
-          <p className="legend">We understand the importance of communication and technologies in the modern world</p>
-        </div>
-      </Carousel>
-
-      {/* Big Title: OUR PROJECTS */}
-      <h2 className="projects-title">OUR PROJECTS</h2>
-
-      {/* Feature Section 1 */}
-      <div className="feature-section">
-        <h3 className="feature-title">ChatPad</h3>
-        <div className="feature-content">
-          <img src={img1} alt="Revolutionize Your Home" className="feature-image" />
-          <p className="feature-caption">
-            Introducing our virtual collaborative brainstorming platform developed to redefine your interactive experience. More than just a tool, ChatPad is a powerhouse of collaborative features essential for teaching, presenting, and daily office tasks.
-          </p>
+      <div className="hero-section">
+        <img src={image1} alt="Efficiency Meets Innovation" className="hero-image" />
+        <div className="hero-text">
+          <h1>Efficiency Meets Innovation</h1>
+          <p>Control your home’s energy use and save effortlessly with My Watt.</p>
         </div>
       </div>
 
-      {/* Feature Section 2 */}
-      <div className="feature-section">
-        <h3 className="feature-title">Mastermind</h3>
-        <div className="feature-content">
-          <img src={img2} alt="Smart Energy Solutions" className="feature-image" />
-          <p className="feature-caption">
-            It is one of our most technical projects developed using C and Assembler, and it implements the Mastermind game on Raspberry Pi and other hardware. It enables the users to experience the game wholeheartedly by providing a retro environment.
-          </p>
-        </div>
+      <div className="info-box">
+        <h3>Did you know that up to 30% of household energy is wasted due to inefficient usage?</h3>
+        <p>
+          Many homes leave lights on, overuse heating, and forget to turn off devices, leading to higher energy bills and unnecessary waste. Our smart energy solutions help you save up to 30% on your energy bills by optimizing usage and reducing waste.
+        </p>
       </div>
 
-      {/* Feature Section 3 */}
-      <div className="feature-section">
-        <h3 className="feature-title">CHARACTER</h3>
-        <div className="feature-content">
-          <img src={img3} alt="Seamless Connectivity" className="feature-image" />
-          <p className="feature-caption">
-            KAMEHAMEHAAAAAAAAAAAAAAAAA
+      <h2>Smart Energy Savings Made Simple</h2>
+      <div className="feature">
+        <div className="feature-text">
+          <p>
+            Energy waste is a silent expense in every home. My Watt gives you real-time energy tracking and automation tools to cut costs, optimize energy use, and reduce your carbon footprint – all in one easy-to-use app.
           </p>
+        </div>
+        <img src={img1} alt="Smart Home Control" className="feature-image" />
+      </div>
+
+      <div className="features-list">
+        <div className="feature-item">
+          <img src={graphImg} alt="Energy Graphs" className="feature-item-image" />
+          <div className="feature-item-text">
+            <h3>View Real-time Energy Graphs:</h3>
+            <p>
+              Access detailed energy consumption graphs to visualize usage patterns over time. Analyze trends, optimize energy efficiency, and make informed decisions about energy management.
+            </p>
+          </div>
+        </div>
+
+        <div className="feature-item">
+          <div className="feature-item-text">
+            <h3>Add Unlimited Rooms and Devices:</h3>
+            <p>
+              Easily add and manage an unlimited number of rooms and devices. Track Real-Time Usage for every room and device, providing comprehensive insights into your energy consumption.
+            </p>
+          </div>
+          <img src={roomsImg} alt="Rooms and Devices" className="feature-item-image" />
+        </div>
+
+        <div className="feature-item">
+          <img src={reportsImg} alt="Daily Reports" className="feature-item-image" />
+          <div className="feature-item-text">
+            <h3>View & Download Daily Summary Reports:</h3>
+            <p>
+              Receive detailed daily energy usage reports, summarizing your consumption and insights. Download the reports to analyze your energy habits and make data-driven decisions.
+            </p>
+          </div>
+        </div>
+
+        <div className="feature-item">
+          <div className="feature-item-text">
+            <h3>Manage Multiple Houses</h3>
+            <p>
+              Home Managers can efficiently add and manage an unlimited number of houses, perfect for large families or property owners. House Users can join and switch between multiple houses, providing flexibility in shared living or multi-household setups.
+            </p>
+          </div>
+          <img src={housesImg} alt="Manage Multiple Houses" className="feature-item-image" />
         </div>
       </div>
     </div>

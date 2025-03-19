@@ -12,7 +12,7 @@ import nibras from "../images/nibras.jpg";
 const teamMembers = [
   { name: "Alex", description: "UX/UI Leader", image: alex },
   { name: "Vir", description: "UX/UI Designer", image: vir },
-  { name: "Faraz", description: "Marketing", image: faraz },
+  { name: "Faraz", description: "Marketing Website", image: faraz },
   { name: "Ihsan", description: "Software Engineer", image: ihsan },
   { name: "Tushita", description: "Product Manager", image: tushita },
   { name: "Fidha", description: "Backend Developer", image: fidha },
@@ -34,16 +34,7 @@ const Team = () => {
     <div className="team-page">
       <h2>Meet the Team</h2>
 
-      {/* Search Bar */}
-      <div className="controls">
-        <input
-          type="text"
-          placeholder="Search team members..."
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-          className="search-bar"
-        />
-      </div>
+      
 
       {/* Team Members Grid */}
       <div className="team-grid">
@@ -88,21 +79,19 @@ const Team = () => {
 
       {/* Vision, Aim, and Mission Paragraphs */}
       <div className="mission-section">
-        <h3>Our Vision</h3>
-        <p>
-          Our vision is to create a world where technology empowers everyone to achieve their full potential.
-        </p>
-
-        <h3>Our Aim</h3>
-        <p>
-          We aim to deliver innovative solutions that make a difference in people's lives.
-        </p>
-
-        <h3>Our Mission</h3>
-        <p>
-          Our mission is to inspire and transform the way people live and work through cutting-edge products.
-        </p>
-      </div>
+          <h3>Our Vision</h3>
+            <p>
+              Our vision is to create a world where technology empowers everyone to achieve their full potential. We strive to innovate and inspire through cutting-edge solutions.
+            </p>
+            <h3>Our Aim</h3>
+            <p>
+            The My Watt Smart Home system is a user-friendly platform for managing smart devices, promoting energy efficiency and sustainability. It offers real-time energy monitoring, device control, and gamification, accessible via web and app. Designed for all ages, it provides tailored features for home managers and residents to reduce carbon footprints.
+            </p>
+            <h3>Our Mission</h3>
+            <p>
+              Our mission is to inspire and transform the way people live and work through cutting-edge products. We are committed to excellence and user satisfaction.
+            </p>
+        </div>
     </div>
   );
 };
