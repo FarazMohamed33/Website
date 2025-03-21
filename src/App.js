@@ -1,15 +1,21 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import React, { useState } from "react";
+import { BrowserRouter as Router, Route, Routes, NavLink, Link } from "react-router-dom"; // Changed import
 import { motion, AnimatePresence } from "framer-motion";
-import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa"; // Import icons
+import { FaInstagram, FaGithub, FaLinkedin, FaBars, FaTimes } from "react-icons/fa"; // Import icons
 import Home from "./pages/Home";
 import Download from "./pages/Download";
 import Team from "./pages/Team";
 import Contact from "./pages/Contact";
 import "./App.css";
-import websiteLogo from "./images/websitelogo.png"; // Import website logo
+import websiteLogo from "./images/logo_white.png"; // Import website logo
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <Router>
       <div className="App">
@@ -23,12 +29,17 @@ function App() {
             {/* Title in the center */}
             <div className="header-title">My Watt</div>
 
-            {/* Navigation tabs on the right */}
-            <nav className="nav-links">
-              <Link to="/" className="nav-link">Home</Link>
-              <Link to="/download" className="nav-link">Download</Link>
-              <Link to="/team" className="nav-link">Team</Link>
-              <Link to="/contact" className="nav-link">Contact</Link>
+            {/* Mobile menu button */}
+            <button className="mobile-menu-btn" onClick={toggleMenu}>
+              {isMenuOpen ? <FaTimes /> : <FaBars />}
+            </button>
+
+            {/* Navigation tabs */}
+            <nav className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
+              <NavLink to="/" onClick={() => setIsMenuOpen(false)} className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Home</NavLink>
+              <NavLink to="/download" onClick={() => setIsMenuOpen(false)} className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Download</NavLink>
+              <NavLink to="/team" onClick={() => setIsMenuOpen(false)} className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Team</NavLink>
+              <NavLink to="/contact" onClick={() => setIsMenuOpen(false)} className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Contact</NavLink>
             </nav>
           </div>
         </header>
@@ -93,7 +104,7 @@ function App() {
         </main>
 
         <footer className="footer">
-          <p>&copy; {new Date().getFullYear()} Watt. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} MyWatt. All rights reserved.</p>
           <div className="social-icons">
             <a
               href="https://www.instagram.com/mywatt_app/"
@@ -104,7 +115,7 @@ function App() {
               <FaInstagram className="icon" />
             </a>
             <a
-              href="https://github.com"
+              href="https://github.com/tp2042/F29SO-project"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
@@ -112,7 +123,7 @@ function App() {
               <FaGithub className="icon" />
             </a>
             <a
-              href="https://www.linkedin.com"
+              href="https://www.linkedin.com/company/106917105"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"

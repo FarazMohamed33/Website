@@ -1,6 +1,6 @@
 import React from "react";
 import { FaStar } from "react-icons/fa"; // Import star icons
-import appImage from "../images/download.JPG"; // Replace with your app image path
+import appImage from "../images/my_watt_web.png"; // Replace with your app image path
 
 const Download = () => {
   const reviews = [
@@ -37,21 +37,21 @@ const Download = () => {
   ];
 
   return (
-    <div className="download">
+    <div className="download" style={{ maxWidth: '100%', overflowX: 'hidden' }}>
       <div className="download-content">
         {/* App Image on the Left */}
         <div className="app-image-container">
-          <img src={appImage} alt="App Preview" className="app-image" />
+          <img src={appImage} alt="App Preview" className="app-image-download" />
         </div>
 
         {/* Download Section on the Right */}
         <div className="download-section">
-          <h2>Download the App</h2>
+          <h2>Get ready for the future of sustainable technologies with MyWatt</h2>
           <a
             href="https://example.com/download"
             className="download-link"
           >
-            Download Here
+            Download Now
           </a>
         </div>
       </div>
@@ -69,18 +69,20 @@ const Download = () => {
           </ul>
         </div>
         <div className="plan premium-plan">
-          <h3>Premium Plan</h3>
-          <p>Ideal for large households or users seeking advanced control and detailed insights into energy usage.</p>
-          <p><strong>AED 49/month or AED 499/year</strong></p>
-          <p>(save AED 588 with the yearly plan)</p>
-          <ul>
-            <li>Advanced Energy Tracking: Track energy usage for an unlimited number of devices and rooms.</li>
-            <li>Home Management: Manage an unlimited number of houses.</li>
-            <li>Automate Devices & Set Schedules.</li>
-            <li>Detailed Energy Reports.</li>
-            <li>Mood Pages.</li>
-            <li>Earn points for energy savings and completing challenges.</li>
-          </ul>
+          <div className="premium-plan-inner">
+            <h3>— Premium Plan —</h3>
+            <p>Ideal for large households or users seeking advanced control and detailed insights into energy usage.</p>
+            <p><strong>AED 49/month or AED 499/year</strong></p>
+            <p className="savings">(save AED 588 with the yearly plan)</p>
+            <ul>
+              <li>Advanced Energy Tracking: Track energy usage for an unlimited number of devices and rooms.</li>
+              <li>Home Management: Manage an unlimited number of houses.</li>
+              <li>Automate Devices & Set Schedules.</li>
+              <li>Detailed Energy Reports.</li>
+              <li>Mood Pages.</li>
+              <li>Earn points for energy savings and completing challenges.</li>
+            </ul>
+          </div>
         </div>
       </div>
 

@@ -1,16 +1,34 @@
-import React from "react";
-import { FaPhone, FaMapMarkerAlt } from "react-icons/fa";
+import React, { useState } from "react";
+import { FaEnvelope } from "react-icons/fa"; // Add FaEnvelope import
 
 const Contact = () => {
+  const [showPopup, setShowPopup] = useState(false);
+  
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setShowPopup(true);
+    setTimeout(() => {
+      setShowPopup(false);
+    }, 5000);
+  };
+
   return (
-    <div className="contact-page">
+    <div className="contact-page" style={{ maxWidth: '100%', overflowX: 'hidden' }}>
+      {showPopup && (
+        <div className="popup-overlay">
+          <div className="success-popup">
+            <p>Message delivered! We will answer as soon as possible.</p>
+          </div>
+        </div>
+      )}
+      
       <h2>Contact Us</h2>
       <p>We'd love to hear from you! Reach out to us for any questions or feedback.</p>
 
       {/* Contact Form */}
       <div className="contact-form">
         <h3>Send Us a Message</h3>
-        <form>
+        <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="name">Name</label>
             <input type="text" id="name" name="name" placeholder="Your Name" required />
@@ -31,12 +49,8 @@ const Contact = () => {
       {/* Contact Information */}
       <div className="contact-info">
         <div className="contact-item">
-          <FaPhone className="contact-icon" />
-          <p>Phone: 04 571 7000</p>
-        </div>
-        <div className="contact-item">
-          <FaMapMarkerAlt className="contact-icon" />
-          <p>Address: Heriot-Watt University, Dubai</p>
+          <FaEnvelope className="contact-icon" />
+          <p>Email: mywattapp@gmail.com</p>
         </div>
       </div>
 

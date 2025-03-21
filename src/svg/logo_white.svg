@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 123.2 120">
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 121.06 120">
   <defs>
     <style>
       .cls-1 {
@@ -9,7 +9,7 @@
 
       .cls-1, .cls-2 {
         fill: none;
-        stroke: #000;
+        stroke: #fff;
         stroke-linecap: round;
       }
 
@@ -19,16 +19,16 @@
       }
     </style>
   </defs>
-  <g id="Layer_1-2" data-name="Layer 1">
+  <g id="Layer_1-2" data-name="Layer 1-2">
     <g>
       <rect class="cls-1" x="39.78" y="2" width="32.87" height="116" rx="16.43" ry="16.43"/>
       <path class="cls-1" d="m105.51,38.43v63.13c0,9.04-7.39,16.43-16.43,16.43h0c-9.04,0-16.43-7.39-16.43-16.43V18.43"/>
-      <path class="cls-1" d="m6.91,81.57V18.43c0-9.04,7.39-16.43,16.43-16.43h0c9.04,0,16.43,7.39,16.43,16.43v83.13"/>
+      <path class="cls-1" d="m6.91,81.57V18.43C6.91,9.39,14.3,2,23.34,2h0c9.04,0,16.43,7.39,16.43,16.43v83.13"/>
     </g>
     <path class="cls-1" d="m6.48,82h1.26c2.47,0,4.48,2.01,4.48,4.48v6.52H2v-6.52c0-2.47,2.01-4.48,4.48-4.48Z"/>
     <g>
-      <rect class="cls-2" x="4.11" y="98" width="0" height="6"/>
-      <rect class="cls-2" x="10.11" y="98" width="0" height="6"/>
+      <rect class="cls-2" x="4.11" y="98" height="6"/>
+      <rect class="cls-2" x="10.11" y="98" height="6"/>
     </g>
     <circle class="cls-2" cx="105.71" cy="26.5" r="5"/>
     <path class="cls-2" d="m102.71,32.5h6v2.5c0,1.38-1.12,2.5-2.5,2.5h-1c-1.38,0-2.5-1.12-2.5-2.5v-2.5h0Z"/>
