@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Route, Routes, NavLink, Link } from "react-router-dom"; // Changed import
+import { BrowserRouter as Router, Route, Routes, NavLink, Link, Navigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaInstagram, FaGithub, FaLinkedin, FaBars, FaTimes } from "react-icons/fa"; // Import icons
 import Home from "./pages/Home";
@@ -17,7 +17,7 @@ function App() {
   };
 
   return (
-    <Router>
+    <Router basename="/Website">
       <div className="App">
         <header className="header">
           <div className="header-content">
@@ -47,19 +47,17 @@ function App() {
         <main className="main-content">
           <AnimatePresence mode="wait">
             <Routes>
-              <Route
-                path="/"
-                element={
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    transition={{ duration: 0.5 }}
-                  >
-                    <Home />
-                  </motion.div>
-                }
-              />
+              {/* Make home page the default route */}
+              <Route path="/" element={
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.5 }}
+                >
+                  <Home />
+                </motion.div>
+              } />
               <Route
                 path="/download"
                 element={
@@ -99,6 +97,7 @@ function App() {
                   </motion.div>
                 }
               />
+              <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
           </AnimatePresence>
         </main>
