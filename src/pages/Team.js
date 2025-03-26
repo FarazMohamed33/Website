@@ -36,7 +36,7 @@ const teamMembers = [
   },
   { 
     name: "Tushita", 
-    role: "Product Manager",
+    role: "Backend Developer",
     description: "Overseeing the development and launch of MyWatt products",
     image: tushita 
   },

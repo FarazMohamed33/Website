@@ -48,7 +48,7 @@ const Download = () => {
         <div className="download-section">
           <h2>Get ready for the future of sustainable technologies with MyWatt</h2>
           <a
-            href="https://example.com/download"
+            href="https://github.com/tp2042/F29SO-project"
             className="download-link"
           >
             Download Now
@@ -72,8 +72,8 @@ const Download = () => {
           <div className="premium-plan-inner">
             <h3>— Premium Plan —</h3>
             <p>Ideal for large households or users seeking advanced control and detailed insights into energy usage.</p>
-            <p><strong>AED 49/month or AED 499/year</strong></p>
-            <p className="savings">(save AED 588 with the yearly plan)</p>
+            <p><strong>AED 19/month or AED 189/year</strong></p>
+            <p className="savings">(save AED 39 with the yearly plan)</p>
             <ul>
               <li>Advanced Energy Tracking: Track energy usage for an unlimited number of devices and rooms.</li>
               <li>Home Management: Manage an unlimited number of houses.</li>
