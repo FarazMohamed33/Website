@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Website/static/css/main.956a89dc.css",
-    "main.js": "/Website/static/js/main.28f973dd.js",
+    "main.js": "/Website/static/js/main.f6b4d807.js",
     "static/js/488.103417aa.chunk.js": "/Website/static/js/488.103417aa.chunk.js",
     "static/media/my_watt_web.png": "/Website/static/media/my_watt_web.f4405baa27e16080afe6.png",
     "static/media/my_watt_web5.png": "/Website/static/media/my_watt_web5.5c7f3944eada0c757eb1.png",
@@ -21,11 +21,11 @@
     "static/media/dhruw.jpg": "/Website/static/media/dhruw.eaa1db52c3d2d1bc33f2.jpg",
     "index.html": "/Website/index.html",
     "main.956a89dc.css.map": "/Website/static/css/main.956a89dc.css.map",
-    "main.28f973dd.js.map": "/Website/static/js/main.28f973dd.js.map",
+    "main.f6b4d807.js.map": "/Website/static/js/main.f6b4d807.js.map",
     "488.103417aa.chunk.js.map": "/Website/static/js/488.103417aa.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.956a89dc.css",
-    "static/js/main.28f973dd.js"
+    "static/js/main.f6b4d807.js"
   ]
 }
